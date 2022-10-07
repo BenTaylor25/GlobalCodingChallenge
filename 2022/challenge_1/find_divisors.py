@@ -15,7 +15,7 @@ def _divisors(x, a, b):
 
 def divisors(x):
     dvsrs = {x}
-    dvsrs |= _divisors(x, 2, int(x/2))
+    dvsrs |= _divisors(x, 2, x<<1)
     
     print(", ".join([str(x) for x in dvsrs]))
 
